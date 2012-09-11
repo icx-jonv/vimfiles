@@ -6,6 +6,7 @@ else
     source /Program Files\ \(x86\)/Vim/vim73/vimrc_example.vim
     source /Program Files\ \(x86\)/Vim/vim73/mswin.vim
 end
+call pathogen#infect()
 set guifont=Consolas:h11:cANSI
 set guioptions-=T " remove the toolbar
 set visualbell " stop it from beeping every time you press the wrong key.
@@ -129,4 +130,3 @@ let g:ctrlp_custom_ignore = {
         \ 'dir': '\.git$',
         \ 'file': '\.exe$\|\.swp$\|\~$',
         \ }
-call pathogen#infect()
