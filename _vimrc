@@ -87,7 +87,7 @@ if has ("gui_running")
     set lines=40 columns=120
 else
     "terminal mode colors
-    "colorscheme solarized
+    colorscheme koehler
     "set background=dark
 
     " solarized colorscheme settings
