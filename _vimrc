@@ -135,7 +135,7 @@ nnoremap j gj
 nnoremap k gk
 
 " set the default create mode to unix
-set ffs = unix,dos,mac
+set ffs=unix,dos,mac
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
