@@ -43,6 +43,9 @@ set autoindent
 set nowrap
 " Set searches to ignore case by default
 set ic
+" set window minimum width so if you use ^W| unfocused windows won't crunch
+" too small
+set winminwidth=10
 " setting scroll to 1 allows the <C-D> and <C-U> keys to scroll one line at a
 " time.
 noremap <c-d> :set scroll=1<cr><c-d>
@@ -50,6 +53,16 @@ noremap <c-u> :set scroll=1<cr><c-u>
 " Control J and Control K select left and right tabs
 noremap <c-j> :tabp<cr>
 noremap <c-k> :tabn<cr>
+" remap the cursor move keys to easily move from top to bottom to middle of
+" the screen
+nnoremap <c-h> H
+nnoremap <c-l> L
+nnoremap <c-m> M
+" remap H and L to go to the soft beginning of the line, or end of the line
+noremap H ^
+noremap L $
+" make Y act like C and D
+nnoremap Y y$
 
 " tab completion! :) thanks Marco!
 "function! InsertTabWrapper(direction)
@@ -110,10 +123,12 @@ nnoremap <space> :nohls<CR>
 "nnoremap <silent> <CR> :put=''<CR>
 nnoremap j gj
 nnoremap k gk
-" make Y act like C and D
-nnoremap Y y$
-noremap H ^
-noremap L $
+
+" set the default create mode to unix
+set ffs=unix,dos,mac
+
+" Switch CWD to the directory of the open buffer
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_custom_ignore = {
