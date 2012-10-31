@@ -6,6 +6,7 @@ else
     source /Program Files\ \(x86\)/Vim/vim73/vimrc_example.vim
     source /Program Files\ \(x86\)/Vim/vim73/mswin.vim
 end
+noremap <C-Y> <C-Y>" turn off the windows remapping for redo becuase I like the default c-y
 call pathogen#infect()
 set guifont=Consolas:h11:cANSI
 set guioptions-=T " remove the toolbar
@@ -135,7 +136,7 @@ nnoremap j gj
 nnoremap k gk
 
 " set the default create mode to unix
-set ffs = unix,dos,mac
+set ffs=unix,dos,mac
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
