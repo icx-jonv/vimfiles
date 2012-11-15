@@ -1,6 +1,6 @@
 set nocompatible
 call pathogen#infect()
-set guifont=Consolas:h11:cANSI
+set guifont=Consolas\ 11
 set guioptions-=T " remove the toolbar
 set visualbell " stop it from beeping every time you press the wrong key.
 
