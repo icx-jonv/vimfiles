@@ -1,17 +1,6 @@
-set nocompatible
-if has ("gui_running")
-    source $VIMRUNTIME/vimrc_example.vim
-    source $VIMRUNTIME/mswin.vim
-else
-    source /Program Files\ \(x86\)/Vim/vim73/vimrc_example.vim
-    source /Program Files\ \(x86\)/Vim/vim73/mswin.vim
-end
-noremap <C-Y> <C-Y>" turn off the windows remapping for redo becuase I like the default c-y
 call pathogen#infect()
-set guifont=Consolas:h11:cANSI
 set guioptions-=T " remove the toolbar
 set visualbell " stop it from beeping every time you press the wrong key.
-behave mswin
 
 set diffexpr=MyDiff()
 function MyDiff()
@@ -123,8 +112,6 @@ else
     "set t_Co=88
     let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 endif
-
-let Tlist_Ctags_Cmd="%HOMEDRIVE%%HOMEPATH%/bin/ctags.exe"
 
 command SaveSession mksession! session.vim
 command LoadSession source session.vim

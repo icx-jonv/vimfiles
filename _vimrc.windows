@@ -1,0 +1,13 @@
+set nocompatible
+if has ("gui_running")
+    source $VIMRUNTIME/vimrc_example.vim
+    source $VIMRUNTIME/mswin.vim
+else
+    source /Program Files\ \(x86\)/Vim/vim73/vimrc_example.vim
+    source /Program Files\ \(x86\)/Vim/vim73/mswin.vim
+end
+noremap <C-Y> <C-Y>" turn off the windows remapping for redo becuase I like the default c-y
+set guifont=Consolas:h11:cANSI
+behave mswin
+let Tlist_Ctags_Cmd="%HOMEDRIVE%%HOMEPATH%/bin/ctags.exe"
+source ~/vimfiles/_vimrc
