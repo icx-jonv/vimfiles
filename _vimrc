@@ -80,7 +80,6 @@ nnoremap Y y$
 "let g:CommandTMaxFiles=50000
 "let g:CommandTMaxDepth=9
 
-syntax enable
 if has ("gui_running")
     set background=dark
     let g:solarized_contrast="high"
@@ -122,8 +121,24 @@ nnoremap <space> :nohls<CR>
 nnoremap j gj
 nnoremap k gk
 
-nnoremap <leader>n :NERDTree<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>t :tabnew<cr>
+
+set backspace=indent,eol,start whichwrap+=<,>,[,]
+set history=50      " keep 50 lines of command line history
+set ruler       " show the cursor position all the time
+set showcmd     " display incomplete commands
+set incsearch       " do incremental searching
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
 
 " set the default create mode to unix
 set ffs=unix,dos,mac
@@ -139,3 +154,11 @@ let g:ctrlp_custom_ignore = {
         \ 'dir': '\.git$',
         \ 'file': '\.exe$\|\.swp$\|\~$',
         \ }
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+          \ | wincmd p | diffthis
+endif
