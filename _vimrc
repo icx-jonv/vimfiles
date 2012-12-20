@@ -122,6 +122,9 @@ nnoremap <space> :nohls<CR>
 nnoremap j gj
 nnoremap k gk
 
+nnoremap <leader>n :NERDTree<cr>
+nnoremap <leader>t :tabnew<cr>
+
 " set the default create mode to unix
 set ffs=unix,dos,mac
 
