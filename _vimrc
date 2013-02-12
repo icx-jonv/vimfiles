@@ -149,7 +149,7 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 " Add system verilog as a verilog highlight
 au BufNewFile,BufRead *.sv set filetype=verilog
 
-let g:ctrlp_working_path_mode = 2
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
         \ 'dir': '\.git$',
         \ 'file': '\.exe$\|\.swp$\|\~$',
