@@ -176,3 +176,12 @@ au!
 " For all text files set 'textwidth' to 78 characters.
 autocmd FileType text setlocal textwidth=78
 augroup end
+
+" This lets you search for the following occurance of your current
+" visual selection
+" To use it, make a visual selection using v then then press *
+vnoremap <silent> * :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
