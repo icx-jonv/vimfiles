@@ -123,6 +123,7 @@ nnoremap k gk
 
 nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>t :tabnew<cr>
+nnoremap <leader>l :TlistToggle<cr>
 
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set history=50      " keep 50 lines of command line history
