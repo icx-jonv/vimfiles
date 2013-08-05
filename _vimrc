@@ -7,6 +7,8 @@ set tabstop=4
 set softtabstop=4
 " expand the tab to spaces
 set expandtab
+" Sets the chars used in list mode.
+set listchars=tab:»·,trail:·
 " keep x number of lines above/below cursor while scrolling
 set so=4
 " display the line numbers
@@ -66,8 +68,6 @@ if has ("gui_running")
 "    augroup END
     " autocmd VimEnter * source session.vim
 
-    " Sets the chars used in list mode.
-    set listchars=tab:»·,trail:·
     " Set the window size on startup
     set lines=40 columns=120
 else
@@ -162,4 +162,3 @@ vnoremap <silent> * :<C-U>
   \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
-let g:EasyMotion_leader_key = '<Leader>'
