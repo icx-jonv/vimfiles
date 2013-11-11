@@ -1,5 +1,5 @@
 set nocompatible
-set guifont=Consolas\ 11
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 
 if v:progname =~? "evim"
   finish
