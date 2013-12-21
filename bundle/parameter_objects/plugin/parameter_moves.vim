@@ -53,7 +53,7 @@ function s:parameter_object(mode)
    let l_save = @l
    try
       " Search for the start of the parameter text object
-      if searchpair('({',',',')}', 'bWs', "s:skip()") <= 0
+      if searchpair('(\|{',',',')\|}', 'bWs', "s:skip()") <= 0
          return
       endif
 
@@ -68,7 +68,7 @@ function s:parameter_object(mode)
       let c = v:count1
       while c
          " Search for the end of the parameter text object
-         if searchpair('({',',',')}', 'W', "s:skip()") <= 0
+         if searchpair('(\|{',',',')\|}', 'W', "s:skip()") <= 0
             normal! `'
             return
          endif
