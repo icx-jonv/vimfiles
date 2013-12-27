@@ -38,6 +38,8 @@ noremap H ^
 noremap L $
 " make Y act like C and D
 nnoremap Y y$
+" make enter open the line below
+nnoremap <cr> o
 
 " tab completion! :) thanks Marco!
 "function! InsertTabWrapper(direction)
