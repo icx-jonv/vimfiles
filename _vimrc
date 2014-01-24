@@ -9,6 +9,7 @@ set softtabstop=4
 set expandtab
 " Sets the chars used in list mode.
 set listchars=tab:»·,trail:·
+set list
 " keep x number of lines above/below cursor while scrolling
 set so=4
 " display the line numbers
