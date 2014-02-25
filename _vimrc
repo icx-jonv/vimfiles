@@ -168,5 +168,9 @@ vnoremap <silent> * :<C-U>
 set laststatus=2
 let g:airline_powerline_fonts=1
 
+" Command line completion
+set wildmenu
+set wildmode=list:longest,full
+
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
