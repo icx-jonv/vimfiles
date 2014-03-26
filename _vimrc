@@ -174,3 +174,16 @@ set wildmode=list:longest,full
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
+
+" Toggle relative line number ruler
+function! NumberToggle()
+    if(&relativenumber == 1)
+        set norelativenumber
+        set number
+    else
+        set nonumber
+        set relativenumber
+    endif
+endfunc
+
+nnoremap <F6> :call NumberToggle()<CR>
