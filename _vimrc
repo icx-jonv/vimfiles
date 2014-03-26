@@ -187,3 +187,6 @@ function! NumberToggle()
 endfunc
 
 nnoremap <F6> :call NumberToggle()<CR>
+
+" Make cscope use the quickfix window
+set cscopequickfix=s-,c-,d-,i-,t-,e-
