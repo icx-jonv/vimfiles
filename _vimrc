@@ -19,6 +19,7 @@ set autoindent
 set nowrap
 " Set searches to ignore case by default
 set ic
+set smartcase
 " set window minimum width so if you use ^W| unfocused windows won't crunch
 " too small
 set winminwidth=10
