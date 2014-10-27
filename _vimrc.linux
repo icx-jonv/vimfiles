@@ -1,3 +1,4 @@
+call pathogen#infect()
 set nocompatible
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 
@@ -17,7 +18,7 @@ endif
 inoremap <C-U> <C-G>u<C-U>
 
 " Make w!! save a file using sudo
-cmap w!! %!sudo tee > /dev/null %
+cmap W %w !sudo tee % > /dev/null
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')

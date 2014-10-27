@@ -1,4 +1,3 @@
-call pathogen#infect()
 set guioptions-=T " remove the toolbar
 set visualbell " stop it from beeping every time you press the wrong key.
 
@@ -177,6 +176,8 @@ set wildmode=list:longest,full
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 
+let g:airline#extensions#hunks#enabled = 0
+
 " Toggle relative line number ruler
 function! NumberToggle()
     if(&relativenumber == 1)
@@ -192,3 +193,17 @@ nnoremap <F6> :call NumberToggle()<CR>
 
 " Make cscope use the quickfix window
 set cscopequickfix=s-,c-,d-,i-,t-,e-
+
+
+"| register notes
+"| from http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/
+"|
+"| operation   "" (default)    "0 (yank)   "1 (numbered)   "a (named)  "- (small delete)
+"|    yw             X             X               -           -               -
+"|    yy             X             X               -           -               -
+"|    "ayw           X             -               -           X               -
+"|    ""ayy          X             -               -           X               -
+"|    dw             X             -               -           -               X
+"|    dd             X             -               X           -               -
+"|    "adw           X             -               X           X               -
+"|    ""add          X             -               X           X               -
