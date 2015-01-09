@@ -49,3 +49,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/kernel-coding-style"]
+	path = bundle/kernel-coding-style
+	url = https://github.com/bhilburn/kernel-coding-style.git
