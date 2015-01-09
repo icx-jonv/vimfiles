@@ -195,6 +195,9 @@ nnoremap <F6> :call NumberToggle()<CR>
 " Make cscope use the quickfix window
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
+nnoremap gh :SidewaysLeft<cr>
+nnoremap gl :SidewaysRight<cr>
+
 
 "| register notes
 "| from http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/

@@ -52,3 +52,6 @@
 [submodule "bundle/kernel-coding-style"]
 	path = bundle/kernel-coding-style
 	url = https://github.com/bhilburn/kernel-coding-style.git
+[submodule "bundle/sideways.vim"]
+	path = bundle/sideways.vim
+	url = https://github.com/AndrewRadev/sideways.vim.git
