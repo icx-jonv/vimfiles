@@ -41,6 +41,7 @@ noremap L $
 nnoremap Y y$
 " make enter open the line below
 nnoremap <cr> o
+autocmd BufReadPost quickfix nnoremap <buffer> <cr> <cr>
 
 " tab completion! :) thanks Marco!
 "function! InsertTabWrapper(direction)
