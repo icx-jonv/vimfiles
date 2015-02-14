@@ -1,8 +1,16 @@
+call pathogen#infect()
 set nocompatible
 
 set guifont=Consolas:h11:cANSI
 behave mswin
 let Tlist_Ctags_Cmd="%HOMEDRIVE%%HOMEPATH%/bin/ctags.exe"
+
+if has("vms")
+  set nobackup      " do not keep a backup file, use versions instead
+else
+  set backup        " keep a backup file
+  set backupdir=./bak,~/vimfiles/backup
+endif
 
 set diffexpr=MyDiff()
 function MyDiff()
