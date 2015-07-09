@@ -55,3 +55,6 @@
 [submodule "bundle/sideways.vim"]
 	path = bundle/sideways.vim
 	url = https://github.com/AndrewRadev/sideways.vim.git
+[submodule "bundle/ctrlp-funky"]
+	path = bundle/ctrlp-funky
+	url = https://github.com/tacahiroy/ctrlp-funky.git
