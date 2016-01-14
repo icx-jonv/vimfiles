@@ -1,0 +1,12 @@
+My VIM configuration files and plugins
+
+To use on linux:
+Link .vim/ -> vimfiles/
+Link .vimrc -> vimfiles/_vimrc.linux
+
+To use on Windows
+Add _vimrc file with "source ~\vimfiles\_vimrc.windows"
+
+To bring in the submodules after cloning,
+git submodule init
+git submodule update

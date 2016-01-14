@@ -64,7 +64,7 @@ autocmd BufReadPost quickfix nnoremap <buffer> <cr> <cr>
 if has ("gui_running")
     set background=dark
     let g:solarized_contrast="high"
-    colorscheme solarized
+    colorscheme koehler
 " commented out, no longer want the session files left everywhere
 "    augroup sessiongrp
 "        au!
