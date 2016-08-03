@@ -196,9 +196,10 @@ nnoremap <F6> :call NumberToggle()<CR>
 " Make cscope use the quickfix window
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
-nnoremap gh :SidewaysLeft<cr>
-nnoremap gl :SidewaysRight<cr>
+" nnoremap gh :SidewaysLeft<cr>
+" nnoremap gl :SidewaysRight<cr>
 
+let g:targets_argTrigger = 'P'
 
 "| register notes
 "| from http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/
@@ -212,3 +213,6 @@ nnoremap gl :SidewaysRight<cr>
 "|    dd             X             -               X           -               -
 "|    "adw           X             -               X           X               -
 "|    ""add          X             -               X           X               -
+
+" Make the highlight color for brace matching much nicer
+hi MatchParen cterm=bold ctermbg=none ctermfg=red
