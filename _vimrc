@@ -214,5 +214,7 @@ let g:targets_argTrigger = 'P'
 "|    "adw           X             -               X           X               -
 "|    ""add          X             -               X           X               -
 
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
 " Make the highlight color for brace matching much nicer
 hi MatchParen cterm=bold ctermbg=none ctermfg=red

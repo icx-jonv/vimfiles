@@ -17,8 +17,8 @@ endif
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" Make w!! save a file using sudo
-cmap W %w !sudo tee % > /dev/null
+" Make W save a file using sudo
+cabbrev W %w !sudo tee % > /dev/null
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -79,5 +79,9 @@ nmap <C-Space><C-Space>i
             \:vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-Space><C-Space>d
             \:vert scs find d <C-R>=expand("<cword>")<CR><CR>
+
+" map / <Plug>(incsearch-forward)
+" map ? <Plug>(incsearch-reverse)
+" map g/ <Plug>(incsearch-stay)
 
 source ~/vimfiles/_vimrc
