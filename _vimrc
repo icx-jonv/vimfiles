@@ -27,8 +27,8 @@ set winminwidth=10
 noremap <c-d> :set scroll=1<cr><c-d>
 noremap <c-u> :set scroll=1<cr><c-u>
 " Control J and Control K select left and right tabs
-noremap <c-j> :tabp<cr>
-noremap <c-k> :tabn<cr>
+noremap <c-j> <c-w>w
+noremap <c-k> <c-w>W
 " remap the cursor move keys to easily move from top to bottom to middle of
 " the screen
 nnoremap <c-h> H
