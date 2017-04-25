@@ -9,7 +9,7 @@
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = git@github.com:icx-jonv/snipmate.vim.git
+	url = https://github.com/icx-jonv/snipmate.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -51,7 +51,7 @@
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/kernel-coding-style"]
 	path = bundle/kernel-coding-style
-	url = git@github.com:icx-jonv/kernel-coding-style.git
+	url = https://github.com/icx-jonv/kernel-coding-style.git
 [submodule "bundle/sideways.vim"]
 	path = bundle/sideways.vim
 	url = https://github.com/AndrewRadev/sideways.vim.git
