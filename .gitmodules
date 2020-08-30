@@ -6,7 +6,7 @@
 	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/icx-jonv/snipmate.vim.git
